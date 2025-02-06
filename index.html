@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Paul Anthony Molina</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/23c06d05e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <img src="Images/Logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Paul Anthony</span><br> from Brooklyn, Ny</h1>
+        </div>
+    </div>
+</div>
+
+<!-- -----about------- -->
+<div id="bio">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/User.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <br><p>I'm a software engineer who embarked on an exciting journey through an apprenticeship at McKinsey & Co. This experience has laid the foundation for my career, igniting my passion for technology and sustainable innovation.
+                Throughout my journey, I've collaborated with talented peers on diverse full-stack projects. Crafting intuitive user interfaces with Python, JavaScript, HTML, and CSS, I've delved into technologies to bring ideas to life.</p><br>
+                
+                <br><p>Beyond the realm of coding, I'm a multi-faceted individual with a flair of creativity. When I'm not immersed in lines of code, you'll find me behind the booth making core memories as a DJ, or experimenting with flavors in the kitchen.
+                Whether it's through my art or technology, I thrive on connecting with others. My goal is to achieve a harmonious balance between work and family life. I'm drawn to projects in the realms of food, e-commerce, med-tech, and gaming, where I can apply my skills and expertise to create impactful solutions.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - Current</span><br>Software Enginner Apprenticeship at McKinsey & Co.</li>
+                        <li><span>2022- 2023</span><br>Case Manager at Forge Consulting, LLC</li>
+                        <li><span>2019 - 2021</span><br>Help Desk Technician at Redtail Technology</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Multiverse Software Engineer Bootcamp</li>
+                        <li><span>2023</span><br>Choose-U full-stack Bootcamp</li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+<!-- --------------------------- Services --------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Visually Stunning website with tailored functionality and user experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Development</h2>
+                <p>Python with Django/Flask for database development. Inlcuding AES encryption and symmetric-key algorithms.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h2>Full-Stack Languages</h2>
+                <p>Learned languages : HTML, CSS, JavaScript, Python, SQL, Typscript, React Native</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------- portfolio ----------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="Work1">
+                <div class="layer">
+                    <h3> Todo App </h3>
+                    <p>Mobile App built with React Native</p>
+                    <p>Frontend built with Typescript, Tailwind CSS</p>
+                    <p>Github Repo</p>
+                    <a href="https://github.com/pmolina90/To_do"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="work2">
+                <div class="layer">
+                    <h3>Content Wheel Generator</h3>
+                    <p>Etc etc etc</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project-3.png" alt="work3">
+                <div class="layer">
+                    <h3>Mi Recipe</h3>
+                    <h2>Recipe Book App</h2>
+                    <p>Backend built with Python (Django)</p>
+                    <p>Sqlite Database with CRUD rest Api's</p>
+                    <p>Frontend built with ReactJS, CSS</p>
+                    <p>Deployed on Render</p>
+                    <a href="https://mi-recipe.onrender.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">My Github</a>
+    </div>
+</div>
+
+<!-- ----------------- CONTACT ----------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>P.a.molina90@gmail.com</p>
+                <!-- <p><i class="fas fa-phone-square-alt"></i>470-990-9999</p> -->
+                <div class="social-icons">
+                    <a href="https://github.com/pmolina90"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/paul-anthony-molina/"><i class=" fab fa-linkedin"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <input type="tel" name="Phone Number" placeholder="Your Phone Number" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id='msg'></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Paul Anthony. Made with <i class="fa-solid fa-heart"></i> by GreatStack Tutorials</p>
+    </div>
+</div>
+
+
+
+<!-- About me script allows us to click on the tab titles 'skills' 'experience' 'education' -->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    // receives an argument, when we click on tab link, it'll hide what was originally selected and display the selected tab link contents
+    function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove('active-link')
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove('active-tab')
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove('active-tab')
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+}  
+</script>
+
+<!-- Scrip to have the side menu open and close when viewing on smaller devices. JS -->
+<script>
+
+    var sidemenu = document.getElementById('sidemenu');
+
+    function openmenu(){
+        sidemenu.style.right = '0';
+    }
+    function closemenu(){
+        sidemenu.style.right = '-200px';
+    }
+
+</script>
+
+
+<!-- contact form script to push data into google sheets (p.a.molina90)  -->
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzSVtfbBzxrKU_DsbD2rkZ7m_A412kXferXpzCy6_DK18IQVzEccyWayOY-nJS8zctGQA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML='Your message has been sent. Please allow up to 24hrs for a response.'
+            setTimeout(function(){
+                msg.innerHTML = ''
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
